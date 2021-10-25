@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  springboot:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: lianshufeng/jre
+    ports:
+      - "80:8080"
+    working_dir: /opt/jar
+    container_name: jre
+    restart: always
+    command: "java -version"
