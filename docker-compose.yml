@@ -11,4 +11,4 @@ services:
     working_dir: /opt/jar
     container_name: jre
     restart: always
-    command: "java -version"
+    command: "java --version"
